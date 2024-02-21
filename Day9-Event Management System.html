@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="./Day9-Event Management System.css">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1>Event Management System</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Add Event</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        
+        <section class="search-container">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Search by title, date, or location">
+              <button type="submit">Search</button>
+            </form>
+          </section>
+          
+          <section class="event-listing">
+            <!-- Event cards will be dynamically populated here -->
+          </section>
+
+        <section class="event-listing">
+            <div class="event-card">
+                <img src="./marriage1.jpg" alt="">
+                <iframe src="./WhatsApp Audio 2024-02-21 at 22.24.26_e2321de9.mp3" ></iframe>
+              <h2 class="event-title">Marriage Event</h2>
+              <p class="event-details">Date: February 23, 2024</p>
+              <p class="event-details">Time: 12:12 AM</p>
+              <p class="event-details">Location: Tenali</p>
+            </div>
+            <div class="event-card">
+                <img src="./birthday.webp" alt="">
+                <iframe src="./birthday song.mp3" frameborder="0"></iframe>
+              <h2 class="event-title">Birthday Event</h2>
+              <p class="event-details">Date: May 25, 2024</p>
+              <p class="event-details">Time: 2:00 PM - 4:00 PM</p>
+              <p class="event-details">Location: Guntur</p>
+            </div>
+            <div class="event-card">
+                <img src="./mehndi.jpg" alt="">
+                <iframe src="./mehndi song.mp3" frameborder="0"></iframe>
+                <h2 class="event-title">Mehndhi Function</h2>
+                <p class="event-details">Date: February 21, 2024</p>
+                <p class="event-details">Time: 12:00 PM - 4:00 PM</p>
+                <p class="event-details">Location: Tenali</p>
+              </div>
+              <div class="event-card">
+                <img src="./graduation.jpg" alt="">
+                <iframe src="./graduation audio.mp3" frameborder="0"></iframe>
+                <h2 class="event-title">Graduation Day</h2>
+                <p class="event-details">Date: March 09, 2024</p>
+                <p class="event-details">Time: 9:00 AM - 5:00 PM</p>
+                <p class="event-details">Location: Narakoduru</p>
+              </div>
+            <!-- Add more event cards as needed -->
+          </section>
+  
+          <section class="add-event-form">
+            <h2>Add Event</h2>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="event-title">Event Title:</label>
+                <input type="text" id="event-title" name="event-title" required>
+              </div>
+              <div class="form-group">
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+              </div>
+              <div class="form-group">
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+              </div>
+              <div class="form-group">
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+              </div>
+              
+              <button type="submit">Add Event</button>
+            </form>
+        </section>
+        
+  </body>
+</html>
